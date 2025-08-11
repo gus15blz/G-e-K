@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="ident">
+        <img id="foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEbeKJDsefrTp4UqmBXzXtC--L3oKg7e3vqA&s">
+    
+        <div class="dados">
+            <p id="id">Nome Completo:</p>
+            <input type="text" id="nomeComp">
+
+            <p id="id">Data de Nascimento:</p>
+            <input type="date" id="dataNasc">
+        </div>
+    
+    </section>
+
+    <section class="disciplina">
+        <p id="discNotas">Informe a Disciplina</p>
+
+        <select id="disc" onchange="seletor()" required="required">
+            <option value="">Selecione uma Disciplina</option>
+            <option value="1">Analise de Projetos e Sistemas</option>
+            <option value="2">Ciência da Computação</option>
+            <option value="3">Programação Front-End</option>
+            <option value="4">Programação Mobile</option>
+        </select>
+    </section>
+
+
+    <section id="Notas">
+        <table class="notas">
+            <tr>
+                <td>Nota 01. . . . . . . . .</td>
+                <td id="n1" class="ValorNota"></td>
+            </tr>
+
+            <tr>
+                <td>Nota 01 . . . . . . . .</td>
+                <td id="n2" class="ValorNota"></td>
+            </tr>
+
+            <tr>
+                <td>Média Trimestral . . .</td>
+                <td id="mt" class="ValorNota"></td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

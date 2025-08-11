@@ -1,0 +1,51 @@
+.efeito {
+    width: 100px;
+    height: 100px;
+    border: outset 10px black;
+}
+
+#div1 {
+background: linear-gradient(to right, yellow, red);
+}
+
+#div2 {
+    background: radial-gradient(circle, lightgreen,darkgreen); 
+}
+
+#div3 {
+    background: radial-gradient(closest-side, white, gray, darkgrey); 
+    animation: pulsar 1s infinite;
+}
+@keyframes pulsar{
+    0%,100%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+}
+
+#div4 {
+    background: radial-gradient(ellipse at top, red, transparent),
+    radial-gradient(ellipse at bottom, blue, green ) ; 
+}
+
+#div5 {
+    background: repeating-linear-gradient(to right, darkblue, darkred, green 10%) ; 
+}
+
+#div6 {
+    background: repeating-radial-gradient(circle, yellow, orange 20% );
+    animation: rotacao 0.3s infinite; 
+}
+
+@keyframes rotacao {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}  
+
+
+#div7 {
+    background: conic-gradient(from 45deg, blue, green,pink, red, orange, blue); 
+    animation: salto  2s infinite
+}
+@keyframes salto {
+    0%{transform: translatey(0);}
+    40%{transform: translatey(-25px);}
+}
